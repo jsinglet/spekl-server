@@ -115,7 +115,7 @@ public class GitHubUtil {
     }
 
     public void authorize(GitHubService s){
-        s.getClient().setOAuth2Token(System.getProperty("GH_API_KEY"));
+        s.getClient().setOAuth2Token(System.getenv("GH_API_KEY"));
     }
 
     //
